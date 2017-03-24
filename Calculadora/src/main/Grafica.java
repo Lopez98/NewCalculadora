@@ -14,6 +14,7 @@ import javax.swing.JOptionPane;
 public class Grafica extends javax.swing.JFrame {
     
     Calculadora miCalculadora = new Calculadora();
+    GraficaTrigo frame2 = new GraficaTrigo();
     
     /**
      * Creates new form Grafica
@@ -194,6 +195,7 @@ public class Grafica extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Grafica().setVisible(true);
+                frame2.setVisible(true);
             }
         });
     }
