@@ -213,16 +213,15 @@ public class GraficaTrigo extends javax.swing.JFrame {
     }//GEN-LAST:event_botonCotangenteMouseClicked
 
     private void botonArcosenoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonArcosenoMouseClicked
-        radianes();
-        this.resultado.setText(textos(miCalculo.arcoseno()));
+        
     }//GEN-LAST:event_botonArcosenoMouseClicked
 
     private void botonArcocosenoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonArcocosenoMouseClicked
-        this.resultado.setText(textos(miCalculo.arcocoseno()));
+        
     }//GEN-LAST:event_botonArcocosenoMouseClicked
 
     private void botonArcotangenteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonArcotangenteMouseClicked
-        this.resultado.setText(textos(miCalculo.arcotangente()));
+        
     }//GEN-LAST:event_botonArcotangenteMouseClicked
 
     /**

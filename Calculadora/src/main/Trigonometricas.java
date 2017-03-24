@@ -11,6 +11,7 @@ package main;
  */
 public class Trigonometricas {
     double angulo;
+    double radianes;
     
     double seno(){
         return Math.sin(angulo);
@@ -37,14 +38,14 @@ public class Trigonometricas {
     }
     
     double arcoseno(){
-        return Math.asin(angulo);
+        return Math.asin(radianes);
     }
     
     double arcocoseno(){
-        return Math.acos(angulo);
+        return Math.acos(radianes);
     }
     
     double arcotangente(){
-        return Math.atan(angulo);
+        return Math.atan(radianes);
     }
 }

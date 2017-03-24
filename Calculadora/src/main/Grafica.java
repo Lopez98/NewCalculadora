@@ -42,6 +42,7 @@ public class Grafica extends javax.swing.JFrame {
         botonDivision = new javax.swing.JButton();
         resultado = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
+        botonTrigo = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -79,6 +80,13 @@ public class Grafica extends javax.swing.JFrame {
 
         jLabel3.setText("Resultado");
 
+        botonTrigo.setText("Calculadora Trigonometrica");
+        botonTrigo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botonTrigoMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -110,7 +118,10 @@ public class Grafica extends javax.swing.JFrame {
                                         .addComponent(botonDivision, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(108, 108, 108)
-                        .addComponent(jLabel3)))
+                        .addComponent(jLabel3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addComponent(botonTrigo)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -134,7 +145,9 @@ public class Grafica extends javax.swing.JFrame {
                 .addComponent(resultado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                .addComponent(botonTrigo)
+                .addContainerGap())
         );
 
         pack();
@@ -163,6 +176,10 @@ public class Grafica extends javax.swing.JFrame {
             this.resultado.setText(textos(miCalculadora.division()));
         }
     }//GEN-LAST:event_botonDivisionMouseClicked
+
+    private void botonTrigoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonTrigoMouseClicked
+        frame2.setVisible(true);
+    }//GEN-LAST:event_botonTrigoMouseClicked
 
     /**
      * @param args the command line arguments
@@ -195,7 +212,7 @@ public class Grafica extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Grafica().setVisible(true);
-                frame2.setVisible(true);
+                
             }
         });
     }
@@ -214,6 +231,7 @@ public class Grafica extends javax.swing.JFrame {
     private javax.swing.JButton botonMultiplicacion;
     private javax.swing.JButton botonResta;
     private javax.swing.JButton botonSuma;
+    private javax.swing.JButton botonTrigo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
